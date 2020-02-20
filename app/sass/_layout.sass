@@ -1,0 +1,458 @@
+/*==============  Layout  ==============*/
+.site-primary
+	flex: 1 0 auto
+	display: flex
+
+.site-content
+	width: 100%
+
+.section-gray
+	background-color: #f6f6f6
+
+.section-border
+	border-top: 1px solid #e3e2e7
+
+.main-banner
+	position: relative
+	padding-top: 75px
+	padding-bottom: 75px
+	margin-top: -30px
+	h1, h2
+		+fz(22)
+		+lh(22, 30)
+
+.main-banner-inner
+	position: relative
+
+.main-banner-bg
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-image: url(../images/banner_bg_1.jpg)
+	background-position: 50% 50%
+	background-size: cover
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(255, 255, 255, 0.85)
+
+.main-banner-bg-man
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-image: url(../images/banner_bg_man.png)
+	background-position: 50% 100%
+	background-size: cover
+
+.main-banner-col
+	>div
+		display: table
+		width: 100%
+		height: 100%
+		>div
+			display: table-cell
+			vertical-align: middle
+
+.main-banner-call
+	color: $color-title
+	+fz(46)
+	+lh(46, 50)
+	font-family: $font-title
+	font-weight: 500
+	padding-top: 20px
+	margin-bottom: 40px
+	text-transform: uppercase
+	letter-spacing: .02em
+
+.main-banner-desc
+	position: relative
+	display: inline-block
+	color: $color-title
+	font-family: $font-title
+	font-weight: 500
+	letter-spacing: .02em
+	padding-left: 28px
+	&::before
+		content: "\f058"
+		font-family: 'Font Awesome 5 Free'
+		font-weight: 400
+		+fz(20)
+		display: block
+		position: absolute
+		top: -5px
+		left: 0
+		color: $color-accent
+
+.main-banner-form
+	background-color: #fff
+	padding: 30px
+	box-shadow: 3px 0 38px rgba(0, 0, 0, 0.1)
+
+.section-content-inner
+	p:last-child
+		margin-bottom: 0
+
+.services-item
+	padding-top: 50px
+	text-align: center
+	>div
+		position: relative
+		max-width: 360px
+		height: 100%
+		margin-left: auto
+		margin-right: auto
+		padding-bottom: 75px
+		&:hover
+			img
+				transform: scale(1.02)
+				opacity: .8
+	figure
+		overflow: hidden
+		&:hover img
+			transform: scale(1.02)
+			opacity: .8
+	img
+		max-width: 100%
+		height: auto
+		transition: all .3s
+	h3
+		+fz(18)
+		+lh(18, 26)
+		margin-top: 25px
+		a
+			color: $color-title
+
+.services-item-price
+	font-family: $font-title
+	+fz(12)
+	font-weight: 700
+	letter-spacing: .04em
+
+.services-item-btn
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+
+.service-all
+	text-align: center
+	padding-top: 50px
+	a
+		font-family: $font-title
+		+fz(12)
+		font-weight: 700
+		letter-spacing: .04em
+		text-transform: uppercase
+
+.request
+	position: relative
+	background-color: $color-base
+	color: #fff
+	text-align: center
+	background-image: url(../images/banner_bg.jpg)
+	background-position: 50% 50%
+	background-size: cover
+	background-attachment: fixed
+	>.container
+		position: relative
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: $color-base
+		opacity: .85
+	h2
+		color: #fff
+		max-width: 750px
+		margin-left: auto
+		margin-right: auto
+	p
+		max-width: 750px
+		margin-left: auto
+		margin-right: auto
+	form
+		margin-left: auto
+		margin-right: auto
+		.input-desc
+			max-width: 360px
+			margin-left: auto
+			margin-right: auto
+			a
+				color: #fff
+				text-decoration: underline
+		input[type=submit]:hover
+			background-color: $color-accent
+			border-color: $color-accent
+
+.features-item
+	padding-top: 30px
+	>div
+		max-width: 360px
+		margin-left: auto
+		margin-right: auto
+	h3
+		+fz(18)
+		+lh(18, 26)
+		margin-top: 25px
+	p
+		margin-top: 20px
+		margin-bottom: 0
+
+.features-ico
+	+fz(60)
+	line-height: 1
+	color: $color-accent
+
+.steps-item
+	padding-left: 115px
+	position: relative
+	margin-top: 30px
+	h3
+		+fz(18)
+		+lh(18, 26)
+		margin-top: 25px
+
+.steps-item-num
+	width: 78px
+	height: 78px
+	position: absolute
+	top: 0
+	left: 15px
+	border-radius: 50%
+	overflow: hidden
+	color: $color-accent
+	background-color: #fff
+	+fz(32)
+	line-height: 80px
+	text-align: center
+	font-weight: 500
+	font-family: $font-title
+	box-shadow: 3px 0 38px rgba(0, 0, 0, 0.1)
+
+.page-nav
+	padding-top: 75px
+	padding-bottom: 75px
+
+.page-top
+	position: relative
+	padding-top: 35px
+	padding-bottom: 35px
+	>.container
+		position: relative
+	h1
+		+fz(18)
+		+lh(18, 26)
+
+.page-top-breadcrumbs
+	ul
+		display: inline-block
+		li
+			display: inline-block
+			text-transform: uppercase
+			padding-left: 6px
+			&::after
+				content: "/"
+				display: inline-block
+				padding-left: 4px
+				position: relative
+				right: -2px
+			&:first-child
+				padding-left: 0
+			&:last-child::after
+				content: none
+			a
+				color: #79787f
+				&:hover
+					text-decoration: underline
+			span
+				text-decoration: underline
+
+.price-content
+	padding-top: 15px
+
+.price-ps
+	+fz(12)
+	p
+		padding-top: 15px
+		margin-bottom: 0
+
+.services-single
+	figure
+		margin-bottom: 0
+		img
+			max-width: 100%
+			height: auto
+
+.services-single-inner
+	position: relative
+
+.services-single-price
+	font-family: $font-title
+	font-weight: 700
+	padding-top: 12px
+
+.services-single-btn
+	padding-top: 25px
+
+#map
+	height: 450px
+	width: 100%
+
+.contacts
+	form
+		input[type=submit]
+			width: auto
+
+.contacts-item
+	margin-bottom: 30px
+	h6
+		margin-bottom: 3px
+		text-transform: none
+	a
+		color: $color-placeholder
+
+.contacts-item-inner
+	display: flex
+	&:hover
+		.contacts-item-ico
+			span
+				box-shadow: 0 0 0 5px rgba(253, 72, 78, 0.4)
+
+.contacts-item-ico,
+.contacts-item-txt
+	>div
+		display: table
+		height: 100%
+		>div
+			display: table-cell
+			vertical-align: middle
+
+.contacts-item-ico
+	margin-right: 20px
+	span
+		display: block
+		width: 77px
+		height: 77px
+		border-radius: 50%
+		background-color: $color-accent
+		text-align: center
+		color: #fff
+		+fz(24)
+		line-height: 77px
+		transition: box-shadow .3s
+
+.contacts-item-txt
+	span
+		white-space: nowrap
+	a:hover
+		color: $color-accent
+		text-decoration: underline
+
+.policy
+	h1, h2, h3, h4, h5, h6
+		text-transform: none
+
+.popup
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	overflow-y: scroll
+	z-index: 999
+	&.popup_inline
+		.popup-content
+			max-width: 360px
+			margin-left: auto
+			margin-right: auto
+			padding: 50px 30px 30px
+			background-color: #fff
+			h2
+				+fz(22)
+				+lh(22, 30)
+		.popup-close
+			top: 0
+			right: 0
+
+.popup-bg
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(30, 29, 36, 0.6)
+	visibility: hidden
+	opacity: 0
+	transition: opacity .2s, visibility .2s
+	transition-delay: .3s
+
+.popup-inner
+	position: relative
+	transform: translateY(100vh)
+	transition: transform .2s ease-out
+	transition-delay: 0s
+	>div
+		display: table
+		width: 100%
+		height: 100vh
+		>div
+			display: table-cell
+			vertical-align: middle
+			padding: 25px 16px
+
+.popup-content
+	position: relative
+
+.popup-close
+	display: block
+	position: absolute
+	width: 50px
+	height: 50px
+	&::before, &::after
+		content: ""
+		display: block
+		position: absolute
+		height: 2px
+		left: 16px
+		right: 16px
+		top: 50%
+		margin-top: -1px
+		background-color: $color-base
+		transition: background-color .3s
+	&::before
+		transform: rotate(45deg)
+	&::after
+		transform: rotate(-45deg)
+	&:hover
+		&::after, &::before
+			background-color: $color-accent
+
+body
+	&.popup_on
+		overflow: hidden
+		height: auto
+		.popup
+			&.active
+				display: block
+			&.visible
+				.popup-bg
+					visibility: visible
+					opacity: 1
+					transition-delay: 0s
+				.popup-inner
+					transform: translateY(0)
+					transition-delay: .2s

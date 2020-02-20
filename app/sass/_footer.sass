@@ -1,0 +1,75 @@
+/*=============  Footer  =============*/
+.site-footer
+	flex: 0 0 auto
+	background-color: $color-base
+	color: #94929b
+	a
+		color: #94929b
+		&:hover
+			color: $color-accent
+	h3
+		+fz(18)
+		+lh(18, 26)
+		color: #fff
+
+.site-footer-content
+	padding-top: 70px
+	padding-bottom: 70px
+
+.site-footer-logo
+	padding-top: 5px
+	span
+		display: block
+		position: relative
+		padding-bottom: 30px
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			width: 30px
+			height: 2px
+			left: 0
+			bottom: 15px
+			background-color: $color-accent
+	img
+		max-height: 30px
+		width: auto
+
+.site-footer-nav ul
+	margin: 0
+	padding: 0
+	li
+		padding-left: 25px
+		&::before
+			content: "\f00c"
+			font-family: 'Font Awesome 5 Free'
+			+fz(12)
+			font-weight: 900
+			display: block
+			position: absolute
+			top: 1px
+			left: 0
+			color: $color-accent
+
+.site-footer-contacts ul
+	margin: 0
+	padding: 0
+	li
+		padding-left: 25px
+		&::before
+			content: none
+		i
+			position: absolute
+			top: 0
+			left: 0
+			color: #fff
+			+fz(12)
+			line-height: 23px
+
+.site-footer-copy
+	background-color: #141419
+	padding-top: 15px
+	padding-bottom: 15px
+	+fz(12)
+	a
+		text-decoration: underline

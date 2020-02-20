@@ -1,0 +1,264 @@
+/*==============  Media  ==============*/
+
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : map-get($grid-breakpoints, xl) - 1px)
+	/**/
+	.hidden-lg
+		display: none
+
+	h1, h2, h3, h4, h5, h6
+		line-height: 1.5
+		&.title-section
+			+fz(24)
+			+lh(24, 36)
+
+	h1
+		+fz(32)
+
+	h2
+		+fz(28)
+
+	h3
+		+fz(24)
+
+	h4
+		+fz(20)
+
+	h5
+		+fz(16)
+
+	h6
+		+fz(15)
+
+	table
+		th
+			padding: 20px
+		td
+			padding: 17px 20px
+
+	.main-banner
+		h1, h2
+			+fz(20)
+
+	.main-banner-call
+		+fz(32)
+		line-height: 1.5
+
+	.services-item,
+	.features-item
+		h3
+			+fz(16)
+
+	.steps-item
+		padding-left: 95px
+		h3
+			+fz(16)
+			margin-top: 18px
+
+	.steps-item-num
+		width: 65px
+		height: 65px
+		font-size: 1.85714rem
+		line-height: 65px
+
+	.contacts-item-ico
+		margin-right: 15px
+		span
+			width: 66px
+			height: 66px
+			line-height: 66px
+
+	#map
+		height: 250px
+
+	.popup.popup_inline
+		.popup-content
+			h2
+				+fz(20)
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : map-get($grid-breakpoints, lg) - 1px)
+	/**/
+	.hidden-md
+		display: none
+
+	.site-header-logo
+		padding-bottom: 22px
+
+	.main-banner-bg
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba(255, 255, 255, 0.6)
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : map-get($grid-breakpoints, md) - 1px)
+	/**/
+	.hidden-sm
+		display: none
+
+	.section-main
+		padding-top: 50px
+		padding-bottom: 50px
+
+	.site-header-logo
+		padding-top: 22px
+		padding-bottom: 0
+		span::after
+			content: none
+
+	.site-header-desc
+		display: none
+
+	.site-header-contacts-item
+		padding-left: 22px
+		&.site-header-contacts-item_tel
+			&::before
+				+fz(14)
+				color: $color-accent
+				top: 0
+			a
+				+fz(11)
+		br,
+		span
+			display: none
+
+	.site-header-call
+		a.btn
+			padding: 0 0 0 22px
+			text-transform: none
+			border: none
+			background-color: transparent
+			color: $color-title
+			font-weight: 500
+			+fz(11)
+			line-height: 19px
+			&::before
+				top: 0
+				left: 0
+				margin-top: 0
+				+fz(14)
+				color: $color-accent
+
+	.site-header-nav
+		nav
+			position: relative
+			display: none
+			>div
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				overflow: hidden
+			ul
+				opacity: 0
+				visibility: hidden
+				transform: translateY(-100%)
+				transition: opacity 0s linear .3s, visibility 0s linear .3s, transform .3s
+				li
+					display: block
+					margin-right: 0
+		&.menu_on
+			nav
+				display: block
+		&.menu_visible
+			nav
+				ul
+					opacity: 1
+					visibility: visible
+					transform: translateY(0)
+					transition: opacity 0s linear 0s, visibility 0s linear 0s ,transform .3s
+
+	.site-header-nav-btn
+		display: block
+
+	.main-banner
+		padding-top: 50px
+		padding-bottom: 50px
+		margin-top: 0
+
+	.main-banner-call
+		+fz(28)
+		line-height: 1.5
+		padding-top: 10px
+		margin-bottom: 30px
+
+	.main-banner-form
+		margin-top: 30px
+		padding: 25px
+
+	.services-single
+		figure
+			margin-bottom: 25px
+
+	.contacts
+		form
+			padding-top: 20px
+
+	.popup.popup_inline
+		.popup-content
+			padding: 50px 25px 25px
+
+	.site-footer-content
+		padding-top: 50px
+		padding-bottom: 50px
+
+	.site-footer-contacts,
+	.site-footer-nav
+		padding-top: 30px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : map-get($grid-breakpoints, sm) - 1px)
+	/**/
+	.hidden-xs
+		display: none
+
+	.main-banner-form
+		padding: 25px 15px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : map-get($grid-breakpoints, sm))
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : map-get($grid-breakpoints, md))
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : map-get($grid-breakpoints, lg))
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : map-get($grid-breakpoints, xl))
+	/**/
+	.hidden-xl
+		display: none
+

@@ -1,0 +1,127 @@
+@include('parts/header.html')
+
+		<div class="site-primary">
+			<main class="site-content">
+				<section class="page-top section-gray">
+					<div class="container">
+						<div class="page-top-title">
+							<h1>Контакты</h1>
+						</div>
+						<div class="page-top-breadcrumbs">
+							<nav>
+								<ul class="unstyled">
+									<li><a href="index.html" title="Главная">Главная</a></li>
+									<li><span>Контакты</span></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</section>
+
+				<section class="contacts section-main" itemscope itemtype="http://schema.org/Organization">
+					<meta itemprop="name" content="Грузи в газель">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="contacts-item">
+									<div class="contacts-item-inner">
+										<div class="contacts-item-ico">
+											<div>
+												<div>
+													<span><i class="fas fa-phone-alt"></i></span>
+												</div>
+											</div>
+										</div>
+										<div class="contacts-item-txt">
+											<div>
+												<div>
+													<h6>Телефон:</h6>
+													<a href="tel:88007004986" itemprop="telephone">8 (800) 700-49-86</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-item">
+									<div class="contacts-item-inner">
+										<div class="contacts-item-ico">
+											<div>
+												<div>
+													<span><i class="fas fa-map-marker-alt"></i></span>
+												</div>
+											</div>
+										</div>
+										<div class="contacts-item-txt" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+											<div>
+												<div>
+													<h6>Адрес:</h6>
+													<span itemprop="addressLocality">Новосибирск</span>, <span itemprop="streetAddress">Максима Горького, 78</span>
+													<meta itemprop="postalCode" content="630124">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-item">
+									<div class="contacts-item-inner">
+										<div class="contacts-item-ico">
+											<div>
+												<div>
+													<span><i class="fas fa-envelope"></i></span>
+												</div>
+											</div>
+										</div>
+										<div class="contacts-item-txt">
+											<div>
+												<div>
+													<h6>E-mail:</h6>
+													<a href="mailto:gruzivgazel@mail.ru" itemprop="email">gruzivgazel@mail.ru</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<form action="#">
+									<div class="input-container">
+										<input type="text" id="request-name" name="request-name" placeholder="Укажите имя*" required>
+									</div>
+									<div class="input-container">
+										<input type="tel" id="request-tel" name="request-tel" placeholder="Укажите телефон*" required>
+									</div>
+
+									<div class="input-container">
+										<textarea rows="4" placeholder="Подробности заявки"></textarea>
+									</div>
+
+									<div class="input-container">
+										<div class="input-desc">
+											Нажимая на кнопку "Отправить заявку", Вы соглашаетесь на обработку персональных данных, согласно <a href="privacy-policy.html" target="blank" title="Соглашение на обработку персональных данных">условиям</a>.
+										</div>
+									</div>
+
+									<div>
+										<input type="submit" class="btn_green" value="Отправить заявку">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="map">
+					<div id="map"></div>
+				</section>
+			</main>
+		</div>
+
+		@include('parts/footer.html')
+	</div>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/scripts.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</body>
+</html>
